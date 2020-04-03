@@ -5,91 +5,200 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
+  <title>Wodny Świat</title>
 </head>
 
 <body>
-  <nav class="nav">
-    <div class="container">
-      <div class="logo">Karol Jaworek</div>
-      <ul class="nav_links">
-        <li class="nav_item"><a href="#about-me" class="nav_link link_primary">About me</a></li>
-        <li class="nav_item"><a href="#projects"  class="nav_link link_primary">Projects</a></li>
-        <li class="nav_item"><a href="#contact" class="nav_link link_primary">Contact</a></li>
+  <div class="main">
+    <nav class="navbar">
+      <ul class="links">
+        <li class="links_item active"><a class='link' href="#feature">O nas</a></li>
+        <li class="links_item"><a class="link" href="#instructor">Instruktorka</a></li>
+        <li class="links_item"><a class="link" href="#classes">Zajęcia</a></li>
+        <li class="links_item"><a class="link" href="#gallery">Galeria</a></li>
+        <li class="links_item"><a class="link" href="#form">Kontakt</a></li>
       </ul>
-    </div>
-  </nav>
-  <header class="header" id="header">
+    </nav>
     <div class="container">
-      <h1 class="header_primary">Hi there, </br> I am aspiring front-end developer</h1>
-      <h2 class="header_secondary">You can find my code experiments at codepen, projects on github, thoughts on twitter and videos on youtube</h2>
-      <h2 class="header_contact">Feel free to contact me at: <a href="#"
-          class="link_primary">karoljaworek@onet.pl</a></h2>
-      <a href="#about-me"><img src="imgs/chevron-down-solid.9b3b0f3560af01c35c34f308be803158.svg" alt="arrow down" class="chevron-down-solid bounce"></a>
-  </header>
-  <a href="#header"><img src="imgs/chevron-up-solid.672bc250b3f543486a7eec6922d6807c.svg" alt="arrow down" class="chevron-up-solid">
-</div></a>
-  <section class="about-me" id="about-me">
-    <div class="container">
-      <h1 class="section_title">About Me</h1>
-      <div class="about-me_container">
-        <p class="about-me_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe ea vel beatae,
-          magni accusantium fugiat amet alias atque ducimus adipisci aliquam eligendi corrupti, id obcaecati quas qui
-          voluptates? Iste.</p>
-        <img src="imgs/me.e0a2dd68277ea99603e46805aff8822b.jpg" alt="me" class="me">
-        <ul class="list-of-skills">
-          <li class="skill">Design
-            <p class="skill_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti recusandae dolore dolorum beatae, nostrum ex!</p>
-          </li>
-          <li class="skill">Code
-            <p class="skill_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, iste? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, voluptate?</p>
-          </li>
-          <li class="skill">... and some java script
-            <p class="skill_details">Hooik sit amet consectetur adipisicing elit. Et, iste? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente modi cum deleniti, illum nemo corporis. Laboriosam temporibus harum tempora architecto.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="projects" id="projects">
-    <div class="container">
-      <h1 class="section_title">Projects</h1>
-      <div class="project">
-        <div class="project_details">
-          <p class="project_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, similique. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Libero architecto labore porro molestias placeat nesciunt.</p>
-            <div class="buttons">
-              <button class="primary">Case Study</button>
-          <button class="primary">Demo</button>
-            </div>
-          
+      <div class="header">
+        <img src="imgs/logo.6751b30651108f79a17a4e7f1dea51ca.png" alt="logo" class="logo">
+        <div class="header_content">
+          <h1 class="header_title">
+            <span class="text_primary">Nauka pływania</span> z nami to czysta przyjemność!
+          </h1>
+          <a class="btn_primary" href="#form">kontakt</a>
         </div>
-        <img src="imgs/project-1.f5a687cc87c13ea6003ebd108c819d3f.png" alt="project-image" class="project-image">
       </div>
-      <div class="project">
-        <img src="imgs/project-2.11fc105913de92663d9ef6612ea28334.png" alt="project-image" class="project-image">
-        <div class="project_details">
-          <p class="project_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, similique. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Libero architecto labore porro molestias placeat nesciunt.</p>
-            <div class="buttons">
-              <button class="primary">Case Study</button>
-          <button class="primary">Demo</button>
-            </div>
-          
+    </div>
+  </div>
+  <section class="feature anchor" id="feature" data-index="0">
+    <div class="container">
+      <p class="section_heading">Zajęcia dla każdego</p>
+      <h1 class="section_text">Zobacz co oferujemy</h1>
+      <div class="feature_grid">
+        <div class="feature_box">
+          <img src="imgs/teacher.f400da1900bf417ac7339eb0c8e990c1.svg" alt="people">
+          <h2 class="feature_box_title">Podział na grupy</h2>
+          <p class="feature_box_text">
+            Ok. 8 osób adekwatnie do swoich umiejętności, wieku i miejsca zamieszkania</p>
+        </div>
+        <div class="feature_box">
+          <img src="imgs/beach.bf6ef79a72ff1ca1e203e6057a03f231.svg" alt="people">
+          <h2 class="feature_box_title">Kursy wakacyjne</h2>
+          <p class="feature_box_text">
+            10 lekcji w dwa tygodnie (różne terminy do wyboru)</p>
+        </div>
+        <div class="feature_box">
+          <img src="imgs/school.5b570e688c5042133a3b668d1e327419.svg" alt="people">
+          <h2 class="feature_box_title">Zajęcia w roku szkolnym</h2>
+          <p class="feature_box_text">
+            Każdy nasz uczeń uczęszcza na zajęcia raz w tygodniu w stałym terminie</p>
+        </div>
+        <div class="feature_box">
+          <img src="imgs/swimming.97014656d1260f643b8cb2f7fcfe8d92.svg" alt="people">
+          <h2 class="feature_box_title">Zajęcia na basenie</h2>
+          <p class="feature_box_text">
+            W Łężeczkach lub Parażynie</p>
         </div>
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="footer_icons">
-      <img src="imgs/github.218e68fda32a394d282765fbad8c856f.svg" alt="github">
-      <img src="imgs/codepen.937138f5f511e6e6f4d55dd86050668a.svg" alt="codepen">
-      <img src="imgs/youtube.2e62978ba31ce2279194b9c27b04b11e.svg" alt="youtube">
-      <img src="imgs/twitter.099cfd4257a8a146021519df5c1f822e.svg" alt="twitter">
+  <section class="instructor anchor" id="instructor" data-index="1">
+    <div class="container">
+      <div class="instructor_content">
+        <p class="section_heading">Instruktorka</p>
+        <h1 class="section_text">Mgr. Magdalena Jaworek-Wesoła</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sit ipsum consequatur nobis explicabo architecto tenetur asperiores quidem quae, nisi incidunt esse earum sint labore doloremque reiciendis officiis est dolores beatae! Distinctio soluta optio eius, ullam fugit ex ad ratione accusamus minus aut dolor dicta? Reiciendis est illo deleniti perspiciatis.</p>
+      </div>
+      <img src="imgs/output.400aa8a862e6808ab00986a62abc0edc.png" alt="instructor">
     </div>
-    <p class="footer_copyright">&copy; Karol Jaworek 2020</p>
-  </footer>
-<script src="bundle.5e5342e60965aab92195.js"></script></body>
+  </section>
+  <section class="classes anchor" id="classes" data-index="2">
+    <div class="container">
+      <p class="section_heading">Zajęcia</p>
+      <h1 class="section_text">Sprawdz dostępność zajęć</h1>
+      <table class="classes_table">
+        <thead>
+          <tr>
+            <td>dzień tygodnia</td>
+            <td>godzina zajęć</td>
+            <td>basen</td>
+            <td>miejscowość dowozu</td>
+            <td>uwagi</td>
+            <td>ilość miejsc</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>poniedziałek</td>
+            <td>15:00</td>
+            <td>Łężeczki</td>
+            <td>Lwówek, Pniewy</td>
+            <td></td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>poniedziałek</td>
+            <td>15:00</td>
+            <td>Łężeczki</td>
+            <td>Lubosz, Kwilcz, Sieraków, Chrzypsko</td>
+            <td></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>środa</td>
+            <td>17:00</td>
+            <td>Parażyn</td>
+            <td>Grońsko, Lwówek, Brody</td>
+            <td></td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>środo</td>
+            <td>18:00</td>
+            <td>Parażyn</td>
+            <td>Głuponie, Kuślin</td>
+            <td></td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>środa</td>
+            <td>20:00</td>
+            <td>Parażyn</td>
+            <td></td>
+            <td>Zajęcia dla dorosłych</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>czwartek</td>
+            <td>15:00</td>
+            <td>Łężeczki</td>
+            <td>Zębowo, Komorowo, Wymyślanka, Pniewy</td>
+            <td></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>czwartek</td>
+            <td>18:00</td>
+            <td>Łężeczki</td>
+            <td>Pniewy, Lwówek</td>
+            <td></td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <div class="gallery_overlay">
+    <div class="gallery_close_btn"><i class="fas fa-times fa-3x" ></i></div>
+    <div class="image_previous"><i class="fas fa-arrow-left fa-3x"></i></div>
+    <div class="image_next"><i class="fas fa-arrow-right fa-3x"></i></div>
+    <img class="image_opened" src="imgs/4.31b224e011f0808222ac0d41a36564c9.jpg" alt="foto">
+  </div>
+  <section class="gallery anchor" id="gallery" data-index="3">
+    <div class="container">
+    <p class="section_heading">Galeria</p>
+    <h1 class="section_text">Zobacz zdjęcia z zajęć</h1>
+    <div class="gallery_box">
+      <div class="gallery_image"><img class="image" src="imgs/1.a71d0b90e383c80ceb72ef987aaa13e0.jpg" alt="foto" data-index="1"> </div>
+      <div class="gallery_image"><img class="image" src="imgs/2.46262e0b2759ed90817b274a4d3aa583.jpg" alt="foto" data-index="2"></div>
+      <div class="gallery_image"><img class="image" src="imgs/3.abb4f1a4da71242a005d9010b8a6ec99.jpg" alt="foto" data-index="3"></div>
+      <div class="gallery_image"><img class="image" src="imgs/4.31b224e011f0808222ac0d41a36564c9.jpg" alt="foto" data-index="4"></div>
+      <div class="gallery_image"><img class="image" src="imgs/5.fdabcdb0662659db967bee272dcd3c95.jpg" alt="foto" data-index="5"></div>
+      <div class="gallery_image"><img class="image" src="imgs/6.9d0528a2c896de34bbcf9b93f6618f72.jpg" alt="foto" data-index="6"></div>
+      <div class="gallery_image"><img class="image" src="imgs/7.a535bde3dbfc8daa37c1deac5c341f86.jpg" alt="foto" data-index="7"></div>
+      <div class="gallery_image"><img class="image" src="imgs/8.7c08a8032d259bc4f3f811bbbf2e3734.jpg" alt="foto" data-index="8"></div>
+    </div>
+  </div>
+  </section>
+  <section class="form anchor" id="form" data-index="4">
+    <div class="container">
+      <p class="section_heading">Formularz</p>
+      <h1 class="section_text">Napisz do nas albo zadzwoń </br><i class="fas fa-phone"></i><span class="phone_number">661 972 158</span></h1>
+      <form method="post">
+        <label for="name">Tytuł</label>
+        <input type="text" id="name" name="user_name">
+        <label for="mail">E-mail</label>
+        <input type="email" id="mail" name="user_mail">
+        <label for="msg">Treść wiadomości</label>
+        <textarea id="msg" name="user_message"></textarea>
+        <a class="btn_primary" type="submit">Wyślij</a>
+      </form>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <div class="company_info">Szkoła Pływania
+        Wodny Świat
+        Magdalena Jaworek-Wesoła
+        Ul. Powstańców WLKP. 2
+        64-310 Lwówek
+        NIP: 5951438715
+      </div>
+      <div class="copy_right">&copy; Karol Jaworek 2020</div>
+    </div>
+  </section>
+<script type="text/javascript" src="bundle.90c85ef34ce1893a8bae.js"></script></body>
 
 </html>
